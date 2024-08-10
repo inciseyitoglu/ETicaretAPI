@@ -9,6 +9,7 @@ namespace ETicaretAPI.Domain.Entities
 {
     public class Order : BaseEntity
     {
+        public int CustomerId { get; set; }
         public string Description { get; set; }
         public string Adress { get; set; }
         public ICollection<Product> Products { get; set; } // Bir order ın birden fazla product ı vardır anlamına gelir.
